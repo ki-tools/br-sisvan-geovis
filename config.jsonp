@@ -1,0 +1,75 @@
+__geovis_config__({
+  "name": "Brazil SISVAN-Web Explorer",
+  "countries": [
+    "BRA"
+  ],
+  "defaultViewMode": {
+    "mode": "geo",
+    "level": "country",
+    "code": {
+      "country": "BRA",
+      "state": ""
+    }
+  },
+  "defaultXVar": "year",
+  "defaultYVar": "stunting",
+  "defaultIndex": 9,
+  "mapStyle": "mapbox://styles/rhafen/cjlqs6rq47uen2speg0aasu3a",
+  "states": {
+    "BRA": ["BRA-612", "BRA-670", "BRA-594", "BRA-576", "BRA-681", "BRA-600", "BRA-613", "BRA-614", "BRA-592", "BRA-595", "BRA-602", "BRA-593", "BRA-622", "BRA-621", "BRA-628", "BRA-626", "BRA-1313", "BRA-623", "BRA-629", "BRA-624", "BRA-625", "BRA-627", "BRA-1311", "BRA-1294", "BRA-599", "BRA-601", "BRA-596"]
+  },
+  "seqLen": 10,
+  "years": [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017],
+  "variables": {
+    "stunting": {
+      "name": "Percent 0-5y stunted children",
+      "breaks": [0, 10, 20, 30, 40],
+      "range": [0.2268, 37.406]
+    },
+    "wasting": {
+      "name": "Percent 0-5y wasted children",
+      "breaks": [0, 5, 10, 15, 20],
+      "range": [0, 19.7007]
+    },
+    "overweight_wh": {
+      "name": "Percent 0-5 y overweight children (WHZ)",
+      "breaks": [0, 10, 20, 30, 40, 50],
+      "range": [0, 43.2071]
+    },
+    "overweight_bmi": {
+      "name": "Percent 0-5y overweight children (BMI)",
+      "breaks": [0, 10, 20, 30, 40],
+      "range": [0, 39.6996]
+    },
+    "overweight_stunting_ratio1": {
+      "name": "Prevalence of overweight (WHZ) / stunting",
+      "breaks": [0, 100, 200, 300, 400, 500, 600, 700],
+      "range": [0, 628.5714]
+    },
+    "overweight_stunting_ratio2": {
+      "name": "Prevalence of overweight (BMI) / stunting",
+      "breaks": [0, 100, 200, 300, 400, 500, 600],
+      "range": [0, 566.6667]
+    },
+    "n_haz": {
+      "name": "Number of children evaluated for HAZ",
+      "breaks": [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000],
+      "range": [31, 6660]
+    },
+    "n_whz": {
+      "name": "Number of children evaluated for WHZ",
+      "breaks": [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000],
+      "range": [31, 6660]
+    },
+    "n_bmi": {
+      "name": "Number of children evaluated for BMI",
+      "breaks": [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000],
+      "range": [31, 6660]
+    },
+    "year": {
+      "name": "year",
+      "breaks": [2008, 2010, 2012, 2014, 2016, 2018],
+      "range": [2008, 2017]
+    }
+  }
+})
