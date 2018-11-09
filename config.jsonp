@@ -43,13 +43,23 @@ __geovis_config__({
     },
     "stunting_wh_ratio": {
       "name": "0-5y stunting / overweight (WHZ)",
-      "breaks": [0, 50, 100, 150, 200, 250, 300],
-      "range": [0, 291.8465]
+      "breaks": [0, 0.5, 1, 1.5, 2, 2.5, 3],
+      "range": [0, 2.9185]
     },
     "stunting_bmi_ratio": {
       "name": "0-5y stunting / overweight (BMI)",
-      "breaks": [0, 50, 100, 150, 200, 250, 300],
-      "range": [0, 253.5714]
+      "breaks": [0, 0.5, 1, 1.5, 2, 2.5, 3],
+      "range": [0, 2.5357]
+    },
+    "wh_stunting_ratio": {
+      "name": "0-5y overweight (WHZ) / stunting",
+      "breaks": [0, 1, 2, 3, 4, 5, 6],
+      "range": [0.0641, 5.3]
+    },
+    "bmi_stunting_ratio": {
+      "name": "0-5y overweight (BMI) / stunting",
+      "breaks": [0, 1, 2, 3, 4, 5],
+      "range": [0.0593, 4.7143]
     },
     "stunting02": {
       "name": "% 0-2y stunted children",
@@ -73,13 +83,23 @@ __geovis_config__({
     },
     "stunting_wl_ratio02": {
       "name": "0-2y stunting / overweight (WLZ)",
-      "breaks": [0, 100, 200, 300, 400],
-      "range": [0, 399.1228]
+      "breaks": [0, 1, 2, 3, 4],
+      "range": [0, 3.9912]
     },
     "stunting_bmi_ratio02": {
       "name": "0-2y stunting / overweight (BMI)",
-      "breaks": [0, 50, 100, 150, 200, 250],
-      "range": [0, 250]
+      "breaks": [0, 0.5, 1, 1.5, 2, 2.5],
+      "range": [0, 2.5]
+    },
+    "wl_stunting_ratio02": {
+      "name": "0-2y overweight (WLZ) / stunting",
+      "breaks": [0, 50, 100, 150, 200, 250, 300, 350],
+      "range": [0.051, 318]
+    },
+    "bmi_stunting_ratio02": {
+      "name": "0-2y overweight (BMI) / stunting",
+      "breaks": [0, 5, 10, 15, 20, 25, 30],
+      "range": [0.0476, 27.5]
     },
     "stunting25": {
       "name": "% 2-5y stunted children",
@@ -103,13 +123,23 @@ __geovis_config__({
     },
     "stunting_wh_ratio25": {
       "name": "2-5y stunting / overweight (WHZ)",
-      "breaks": [0, 50, 100, 150, 200, 250, 300, 350],
-      "range": [0, 314.2857]
+      "breaks": [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5],
+      "range": [0, 3.1429]
     },
     "stunting_bmi_ratio25": {
       "name": "2-5y stunting / overweight (BMI)",
-      "breaks": [0, 50, 100, 150, 200, 250, 300],
-      "range": [0, 298.1818]
+      "breaks": [0, 0.5, 1, 1.5, 2, 2.5, 3],
+      "range": [0, 2.9818]
+    },
+    "wh_stunting_ratio25": {
+      "name": "2-5y overweight (WHZ) / stunting",
+      "breaks": [0, 1, 2, 3, 4, 5, 6, 7],
+      "range": [0.0396, 7]
+    },
+    "bmi_stunting_ratio25": {
+      "name": "2-5y overweight (BMI) / stunting",
+      "breaks": [0, 1, 2, 3, 4, 5, 6],
+      "range": [0.0396, 6]
     },
     "n_haz": {
       "name": "# 0-5y child evaluated for HAZ",
