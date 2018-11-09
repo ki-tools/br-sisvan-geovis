@@ -12,7 +12,7 @@ __geovis_config__({
     }
   },
   "defaultXVar": "year",
-  "defaultYVar": "stunting",
+  "defaultYVar": "stunting02",
   "defaultIndex": 9,
   "mapStyle": "mapbox://styles/rhafen/cjlqs6rq47uen2speg0aasu3a",
   "states": {
@@ -22,49 +22,109 @@ __geovis_config__({
   "years": [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017],
   "variables": {
     "stunting": {
-      "name": "Percent 0-5y stunted children",
+      "name": "% 0-5y stunted children",
       "breaks": [0, 10, 20, 30, 40],
-      "range": [0.2268, 37.406]
+      "range": [0, 37.4884]
     },
     "wasting": {
-      "name": "Percent 0-5y wasted children",
+      "name": "% 0-5y wasted children",
       "breaks": [0, 5, 10, 15, 20],
-      "range": [0, 19.7007]
+      "range": [0, 19.5349]
     },
     "overweight_wh": {
-      "name": "Percent 0-5 y overweight children (WHZ)",
+      "name": "% 0-5y overweight children (WHZ)",
       "breaks": [0, 10, 20, 30, 40, 50],
-      "range": [0, 43.2071]
+      "range": [0.8, 42.8571]
     },
     "overweight_bmi": {
-      "name": "Percent 0-5y overweight children (BMI)",
+      "name": "% 0-5y overweight children (BMI)",
       "breaks": [0, 10, 20, 30, 40],
-      "range": [0, 39.6996]
+      "range": [0.103, 39.3782]
     },
-    "overweight_stunting_ratio1": {
-      "name": "Prevalence of overweight (WHZ) / stunting",
-      "breaks": [0, 100, 200, 300, 400, 500, 600, 700],
-      "range": [0, 628.5714]
+    "stunting_wh_ratio": {
+      "name": "0-5y stunting / overweight (WHZ)",
+      "breaks": [0, 50, 100, 150, 200, 250, 300],
+      "range": [0, 300]
     },
-    "overweight_stunting_ratio2": {
-      "name": "Prevalence of overweight (BMI) / stunting",
-      "breaks": [0, 100, 200, 300, 400, 500, 600],
-      "range": [0, 566.6667]
+    "stunting_bmi_ratio": {
+      "name": "0-5y stunting / overweight (BMI)",
+      "breaks": [0, 50, 100, 150, 200, 250, 300],
+      "range": [0, 262.3932]
+    },
+    "stunting02": {
+      "name": "% 0-2y stunted children",
+      "breaks": [0, 10, 20, 30, 40, 50, 60],
+      "range": [0, 50.4505]
+    },
+    "wasting02": {
+      "name": "% 0-2y wasted children",
+      "breaks": [0, 5, 10, 15, 20, 25, 30, 35],
+      "range": [0, 30.5085]
+    },
+    "overweight_wl02": {
+      "name": "% 0-2y overweight children (WLZ)",
+      "breaks": [0, 10, 20, 30, 40, 50],
+      "range": [0, 49.7908]
+    },
+    "overweight_bmi02": {
+      "name": "% 0-2y overweight children (BMI)",
+      "breaks": [0, 10, 20, 30, 40, 50, 60],
+      "range": [0, 54.386]
+    },
+    "stunting_wl_ratio02": {
+      "name": "0-2y stunting / overweight (WLZ)",
+      "breaks": [0, 1000, 2000, 3000, 4000],
+      "range": [0, 4000]
+    },
+    "stunting_bmi_ratio02": {
+      "name": "0-2y stunting / overweight (BMI)",
+      "breaks": [0, 100, 200, 300, 400, 500],
+      "range": [0, 412.5]
+    },
+    "stunting25": {
+      "name": "% 2-5y stunted children",
+      "breaks": [0, 10, 20, 30, 40],
+      "range": [0, 36.75]
+    },
+    "wasting25": {
+      "name": "% 2-5y wasted children",
+      "breaks": [0, 5, 10, 15, 20],
+      "range": [0, 18.8406]
+    },
+    "overweight_wh25": {
+      "name": "% 2-5 y overweight children (WHZ)",
+      "breaks": [0, 10, 20, 30, 40, 50],
+      "range": [0, 44.2857]
+    },
+    "overweight_bmi25": {
+      "name": "% 2-5y overweight children (BMI)",
+      "breaks": [0, 10, 20, 30, 40],
+      "range": [0, 39.1805]
+    },
+    "stunting_wh_ratio25": {
+      "name": "2-5y stunting / overweight (WHZ)",
+      "breaks": [0, 50, 100, 150, 200, 250, 300, 350],
+      "range": [0, 319.2308]
+    },
+    "stunting_bmi_ratio25": {
+      "name": "2-5y stunting / overweight (BMI)",
+      "breaks": [0, 50, 100, 150, 200, 250, 300, 350],
+      "range": [0, 303.75]
     },
     "n_haz": {
-      "name": "Number of children evaluated for HAZ",
-      "breaks": [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000],
-      "range": [31, 6660]
+      "name": "# 0-5y child evaluated for HAZ",
+      "breaks": [0, 2000, 4000, 6000, 8000],
+      "range": [31, 7512]
     },
     "n_whz": {
-      "name": "Number of children evaluated for WHZ",
-      "breaks": [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000],
-      "range": [31, 6660]
+      "name": "# 0-5y child evaluated for WHZ",
+      "breaks": [0, 2000, 4000, 6000, 8000],
+      "range": [31, 7512]
     },
     "n_bmi": {
-      "name": "Number of children evaluated for BMI",
-      "breaks": [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000],
-      "range": [31, 6660]
+      "name": "# 0-5y child evaluated for BMI",
+      "breaks": [0, 2000, 4000, 6000, 8000],
+      "range": [31, 7512]
     },
     "year": {
       "name": "year",
